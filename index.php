@@ -4,6 +4,8 @@ $username="b77cfb6e5654c6";
 $password="db79ff493032d7a";
 if(isset($_POST["tgname"]) && isset($_POST["tgloc"])&& isset($_POST["encoded_string"]))
 {
+	echo "yesssss";
+	exit;
 	
 	$encoded_string = $_POST["encoded_string"];
 	$image_name = $_POST["image_name"];
