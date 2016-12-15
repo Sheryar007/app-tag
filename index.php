@@ -28,14 +28,17 @@ if(isset($_POST["tgname"]) && isset($_POST["tgloc"])&& isset($_POST["encoded_str
 	{
 		die("connection:failed:".$con->connect_error);
 	}
-	$var = mysqli_query($con,"INSERT INTO tag(tgname, tgloc,name,path) VALUES
+	$query = "INSERT INTO tag(tgname, tgloc,name,path) VALUES
 								(
 								'".$name."',
 								'".$loc."',
 								'".$image_name."',
-								'".$path."')");
+								'".$path."')";
+								echo $query;
+	exit;
+	$var = mysqli_query($con, $query);
 								
-	//echo $var;
+	
 	if($var)
 	{		
 			$var1 = mysqli_query($con, "SELECT * FROM tag ORDER by id DESC LIMIT 1");
