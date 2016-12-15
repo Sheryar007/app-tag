@@ -34,8 +34,7 @@ if(isset($_POST["tgname"]) && isset($_POST["tgloc"])&& isset($_POST["encoded_str
 								'".$loc."',
 								'".$image_name."',
 								'".$path."')";
-								echo $query;
-	exit;
+								
 	$var = mysqli_query($con, $query);
 								
 	
