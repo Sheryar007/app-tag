@@ -1,7 +1,7 @@
 <?php 
-$servername="localhost";
-$username="root";
-$password="";
+$servername="us-cdbr-iron-east-04.cleardb.net";
+$username="b77cfb6e5654c6";
+$password="db79ff493032d7a";
 if(isset($_POST["tgname"]) && isset($_POST["tgloc"])&& isset($_POST["encoded_string"]))
 {
 	
@@ -17,7 +17,7 @@ if(isset($_POST["tgname"]) && isset($_POST["tgloc"])&& isset($_POST["encoded_str
 	fclose($file);
 
 	$con= mysqli_connect($servername,$username,$password);
-	mysqli_select_db( $con ,"Webservice");
+	mysqli_select_db( $con ,"heroku_7bf75d7fb8c2e8a");
 	if($con->connect_error)
 	{
 		die("connection:failed:".$con->connect_error);

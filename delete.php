@@ -1,10 +1,10 @@
 <?php 
-$servername = "localhost";
-$user_name = "root";
-$password="";
+$servername="us-cdbr-iron-east-04.cleardb.net";
+$username="b77cfb6e5654c6";
+$password="db79ff493032d7a";
 
 $con= mysqli_connect($servername,$user_name,$password);
-		mysqli_select_db( $con ,"Webservice");
+		mysqli_select_db( $con ,"heroku_7bf75d7fb8c2e8a");
 		if($con->connect_error)
 		{
 			echo "database not connected";
