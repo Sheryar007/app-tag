@@ -40,6 +40,7 @@ if(isset($_POST["tgname"]) && isset($_POST["tgloc"])&& isset($_POST["encoded_str
 			echo json_encode($arr[0]);
 			// print_r($arr);
 			//exit;
+			
 	}
 	else{
 		echo "ERROR";
