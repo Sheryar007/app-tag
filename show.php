@@ -1,7 +1,7 @@
 <?php 
-$servername = "localhost";
-$user_name = "root";
-$password="";
+$servername = "us-cdbr-iron-east-04.cleardb.net";
+$user_name = "b77cfb6e5654c6";
+$password="db79ff493032d7a";
 
 
 $con= mysqli_connect($servername,$user_name,$password);
