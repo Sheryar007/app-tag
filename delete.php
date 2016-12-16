@@ -16,7 +16,7 @@ $con= mysqli_connect($servername,$user_name,$password);
 			//echo $some_id;
 			//exit;
 			$query = "DELETE FROM tag WHERE id = '".$_GET['id']."'";
-			echo $query;
+			//echo $query;
 			echo mysqli_query($con,$query);
 			echo "Query Executating";
 		}
